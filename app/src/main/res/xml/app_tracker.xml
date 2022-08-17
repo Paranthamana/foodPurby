@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ga_sessionTimeout">300</integer>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <!--<string name="ga_trackingId">UA-75375637-1</string>-->
+    <string name="ga_trackingId">UA-72221756-1</string>
+    <string name="ga_sampleFrequency">100.0</string>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <screenName name="com.foodpurby.HomeActivity">Home Screen</screenName>
+    <screenName name="com.foodpurby.screens.MyCartCalculation">Cart Calculation</screenName>
+    <screenName name="com.foodpurby.screens.MyCart">My Cart</screenName>
+    <screenName name="com.foodpurby.screens.CityArea">City</screenName>
+    <screenName name="com.foodpurby.screens.Help">Help</screenName>
+    <screenName name="com.foodpurby.screens.InviteAndEarn">Invite &amp; Earn</screenName>
+    <screenName name="com.foodpurby.screens.ItemListFragment">ItemListfragment</screenName>
+    <screenName name="com.foodpurby.screens.MainMenuFragment">MainMenuFragment</screenName>
+    <screenName name="com.foodpurby.screens.MenuCategory">Menu Category</screenName>
+    <screenName name="com.foodpurby.screens.MenuCuisines">Menu Cusines</screenName>
+    <screenName name="com.foodpurby.screens.MenuProducts">Menu Products</screenName>
+    <screenName name="com.foodpurby.screens.MyAddress">My Address</screenName>
+    <screenName name="com.foodpurby.screens.MyPaymentCOD">My Payment COD</screenName>
+    <screenName name="com.foodpurby.screens.HelpBrowser">Help Browser</screenName>
+    <screenName name="com.foodpurby.screens.MyPaymentMethod">My Payment Method</screenName>
+    <screenName name="com.foodpurby.screens.MyPaymentOnline_PayU">Pay_U Online</screenName>
+    <screenName name="com.foodpurby.screens.MyPaymentOrderConfirmed">My payment order confirmed</screenName>
+    <screenName name="com.foodpurby.screens.NavigationDrawerFragment">Navigation Drawer Fragment</screenName>
+    <screenName name="com.foodpurby.screens.Offers">Offers</screenName>
+    <screenName name="com.foodpurby.screens.OfflineDataSerivces">Offline Data</screenName>
+    <screenName name="com.foodpurby.screens.RestaurantFilter">Filters</screenName>
+    <screenName name="com.foodpurby.screens.RestaurantProfile">Profile</screenName>
+    <screenName name="com.foodpurby.screens.RestaurantProfileReview">Profile Reviews</screenName>
+    <screenName name="com.foodpurby.screens.Restaurants">Restaurant</screenName>
+    <screenName name="com.foodpurby.screens.SplashScreen">Splash screen</screenName>
+    <screenName name="com.foodpurby.screens.Settings">Settings</screenName>
+    <screenName name="com.foodpurby.screens.UserAddressEditWithoutMap">Address Update</screenName>
+    <screenName name="com.foodpurby.screens.UserOrder">Orders</screenName>
+    <screenName name="com.foodpurby.screens.UserSignin">Signin</screenName>
+    <screenName name="com.foodpurby.screens.UserSigninForgotPassword">Forgot Password</screenName>
+    <screenName name="com.foodpurby.screens.UserSignUp">Sign Up</screenName>
+
+</resources>

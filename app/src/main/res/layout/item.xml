@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        fresco:placeholderImage="@drawable/ic_location_red" />
+
+    <TextView
+        android:id="@+id/tvItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/txt_item_name"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingTop="0dp"
+        android:text="@string/txt_usd"
+        android:textColor="@color/price"
+        android:textSize="12sp" />
+</LinearLayout>

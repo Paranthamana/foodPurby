@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    tools:context="com.foodpurby.screens.ContactUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/FCU_label1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/FCU_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/FCU_label2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FCU_label1">
+
+                <EditText
+                    android:id="@+id/FCU_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/FCU_label3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FCU_label2">
+
+                <EditText
+                    android:id="@+id/FCU_mobilenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/FCU_label4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FCU_label3">
+
+                <EditText
+                    android:id="@+id/FCU_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Subject"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/FCU_label5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborder"
+                android:layout_below="@+id/FCU_label4">
+
+                <EditText
+                    android:id="@+id/FCU_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Message"
+                    android:lines="3"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textColor="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/FUC_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FCU_label5"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/contactborder"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:id="@+id/FUC_contactname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FUC_submit"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="text" />
+
+            <TextView
+                android:id="@+id/FUC_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FUC_contactname"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="text" />
+
+            <TextView
+                android:id="@+id/FUC_contactnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FUC_location"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="text" />
+
+            <TextView
+                android:id="@+id/FUC_emauiladdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FUC_contactnumber"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="text" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_below="@+id/FUC_emauiladdress">
+
+                <fragment
+                    android:id="@+id/FCU_map"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <!--<fragment
+                    android:id="@+id/FCU_map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />-->
+
+            </LinearLayout>
+
+            <!-- <fragment
+                 android:id="@+id/FCU_map"
+                 android:name="com.google.android.gms.maps.MapFragment"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_150sdp"
+                 android:layout_below="@+id/FUC_emauiladdress"
+                 android:layout_marginBottom="@dimen/_30sdp"
+                 android:layout_marginTop="@dimen/_5sdp" />-->
+
+
+            <!--<fragment
+                android:id="@+id/FUC_fragment"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+
+                ></fragment>-->
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

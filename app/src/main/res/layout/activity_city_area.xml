@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/ic_shoppa_bg"
+              android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.foodpurby.utillities.ScrollableGridView
+                android:id="@+id/gridCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/TextSize_10"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:numColumns="2"
+                android:visibility="gone"
+                android:stretchMode="columnWidth"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/TextSize_10"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:padding="@dimen/TextSize_8">
+
+                <com.foodpurby.customview.CustomButton
+                    android:id="@+id/btnAllRestaurants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/TextSize_8"
+                    android:layout_marginLeft="@dimen/TextSize_8"
+                    android:layout_marginRight="@dimen/TextSize_8"
+                    android:background="@drawable/rounded_red_button"
+                    android:gravity="center"
+                    android:text="@string/txt_allshops"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/TextSize_8">
+
+                    <com.foodpurby.customview.CustomTextView
+                        android:id="@+id/tvCityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_city"
+                        android:drawableLeft="@drawable/ic_city"
+                        android:drawablePadding="@dimen/TextSize_8"
+                        android:gravity="center|left"
+                        android:padding="@dimen/TextSize_8"
+                        android:text="@string/txt_city"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/TextSize_8">
+
+
+                    <com.foodpurby.customview.CustomTextView
+                        android:id="@+id/tvAreaName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_city"
+                        android:drawableLeft="@drawable/ic_location"
+                        android:drawablePadding="@dimen/TextSize_8"
+                        android:gravity="center|left"
+                        android:padding="@dimen/TextSize_8"
+                        android:text="@string/txt_location"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/TextSize_8">
+
+                    <TextView
+                        android:id="@+id/ACA_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_city"
+                        android:drawablePadding="@dimen/TextSize_8"
+                        android:gravity="center|left"
+                        android:padding="@dimen/TextSize_8"
+                        android:text="Category"
+                        android:visibility="gone"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/TextSize_8"
+                    android:paddingLeft="@dimen/TextSize_8"
+                    android:paddingRight="@dimen/TextSize_8"
+                    android:paddingTop="@dimen/TextSize_15">
+
+                    <com.foodpurby.customview.CustomTextView
+                        android:id="@+id/tvMyLocation"
+                        style="@style/TextView.Normal"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/TextSize_8"
+                        android:clickable="true"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/ic_current_location"
+                        android:drawablePadding="@dimen/TextSize_8"
+                        android:gravity="center"
+                        android:text="@string/current_loc"
+                        android:textColor="@color/white"
+                        android:typeface="sans"/>
+
+                    <com.foodpurby.customview.CustomButton
+                        android:id="@+id/btnShowRestaurants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rounded_red_button"
+                        android:gravity="center"
+                        android:text="@string/txt_show_restaurants"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/TextSize_8"
+                    android:text="For testing purpose please use the below details\r\nCity: Bangalore\r\nArea: Marathahalli"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/TextSize_8"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

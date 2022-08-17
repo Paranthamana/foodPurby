@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.foodpurby.com.tabaogo.screens.MyCart">
+
+    <include layout="@layout/activity_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/llMyAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvRestaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_restaurant_name"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/addressbook"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/txt_address_book"
+                android:textSize="@dimen/TextSize_14"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+
+            <TextView
+                android:id="@+id/btnAddNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/txt_add_new"
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/TextSize_14"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#d4d4d4"/>
+
+        <ListView
+            android:id="@+id/lvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNewUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_view"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/txt_contact_address"
+                android:textSize="@dimen/TextSize_14"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btnSignin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/txt_pls_signin"
+                android:textColor="@color/toolbar_color"
+                android:textSize="@dimen/TextSize_14"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#d4d4d4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/txt_contact_address"
+                android:textSize="@dimen/TextSize_14"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:backgroundTint="@color/item"
+            android:focusable="false"
+            android:hint="First Name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/TextSize_13"/>
+
+        <EditText
+            android:id="@+id/et_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:backgroundTint="@color/item"
+            android:focusable="false"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/TextSize_13"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:backgroundTint="@color/item"
+            android:focusable="false"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/TextSize_13"/>
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:backgroundTint="@color/item"
+            android:focusable="false"
+            android:hint="Mobile No"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/TextSize_13"/>
+
+        <Button
+            android:id="@+id/btnPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/rounded_red_button"
+            android:text="@string/txt_payment_methods"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,602 @@
+<resources>
+    <string name="app_name">Foodpurby</string>
+    <string name="hello_world">Hello world!</string>
+    <!--<string name="facebook_app_id">1548358412124181</string>-->
+    <!--<string name="facebook_app_id">308822426198483</string>-->
+    <string name="facebook_app_id">393709117691855</string>
+    <!--<string name="facebook_app_id">1687311648222923</string>-->
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_main_menu">Close navigation drawer</string>
+    <string name="title_activity_menu_products">Close navigation drawer</string>
+    <string name="title_activity_my_cart">Close navigation drawer</string>
+    <string name="title_activity_restaurant_profile">RestaurantProfile</string>
+    <string name="title_activity_singin">Singin</string>
+    <string name="title_activity_signup">Signup</string>
+
+    <string name="MenuTitle_restaurants">FOODS</string>
+    <string name="MenuTitle_cakes_sweets">"CAKES &amp; SWEETS"</string>
+    <string name="MenuTitle_flowers">FLOWERS</string>
+    <string name="MenuTitle_groceries">GROCERIES</string>
+
+    <string name="about_powered_by"><a href='%1$s'>Powered by %2$s</a></string>
+    <string name="about_copyright">Copyright &#169; %1$s %2$s. All rights reserved.</string>
+    <string name="about_powered_by_link">%1$s</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="rs">&#x20B9;</string>`
+
+    <string name="about_page_terms_and_conditions">Terms and Conditions</string>
+    <string name="about_page_about">About Us</string>
+    <string name="about_page_privacy_policy">Privacy Policy</string>
+    <string name="about_page_faq">FAQ</string>
+
+    <string name="about_page_terms_and_conditions_url">%1$s/terms.html</string>
+    <string name="about_page_about_url">%1$s/about.html</string>
+    <string name="about_page_privacy_policy_url">%1$s/privacy_policy.html</string>
+    <string name="about_page_faq_url">%1$s/faq.html</string>
+    <string name="title_activity_main_map">MainMap</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_facebook">Facebook</string>
+    <string name="txt_cerate_account">Create your Account</string>
+
+
+    <string name="txt_select_all"><u>Select all</u></string>
+    <string name="txt_un_select"><u>clear</u></string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="tct_ok">OK</string>
+    <string name="txt_change_language">Change Language</string>
+    <string name="txt_guest">Guest</string>
+    <string name="txt_english">English</string>
+    <string name="txt_arabic">Arabic</string>
+    <string name="txt_home">Home</string>
+    <string name="txt_orders">My Order</string>
+    <string name="txt_myaddress">My AddressList</string>
+    <string name="txt_tabaoco_credit">Foodpurby Credit</string>
+    <string name="txt_my_fav_rest">My Favourite Restaurants</string>
+    <string name="txt_my_profile">My Profile</string>
+    <string name="txt_sign_in">Sign in</string>
+    <string name="txt_sign_out">Sign out</string>
+    <string name="txt_settings">Settings</string>
+    <string name="txt_help">Help</string>
+    <string name="txt_city">City</string>
+    <string name="txt_location">Location</string>
+    <string name="txt_show_restaurants">Search</string>
+    <string name="current_loc">Use my current location</string>
+    <string name="txt_forgot_password">Forgotten your password?</string>
+    <string name="txt_email_id">Email</string>
+    <string name="txt_email_new_password">E-mail new password</string>
+    <string name="txt_popular">Popular</string>
+    <string name="txt_category">Category</string>
+    <string name="txt_nearby">NearBy</string>
+    <string name="txt_sort_by">Sort by:</string>
+    <string name="txt_drinks">Drinks</string>
+    <string name="txt_mark_my_address">Mark my address</string>
+    <string name="txt_address_details">Address details</string>
+    <string name="txt_apartment_name">Apartment name</string>
+    <string name="txt_landmark">Landmark</string>
+    <string name="txt_delivery_instructions">Delivery instructions</string>
+    <string name="txt_address_type">Address type</string>
+    <string name="txt_friends_home">e.g. Friend\'s home</string>
+    <string name="txt_save_my_address">Save my address</string>
+    <string name="txt_building_name">Building Name</string>
+    <string name="txt_companys_name">Company Name</string>
+    <string name="txt_update_my_address">Update my address</string>
+    <string name="txt_others">Other</string>
+    <string name="txt_work">Work</string>
+    <string name="txt_area">Location</string>
+    <!--<string name="txt_area">Area</string>-->
+    <string name="txt_company_name">Estate Name</string>
+    <string name="txt_flat_number">Address2</string>
+    <!--<string name="txt_flat_number">Door No or Apartment No</string>-->
+    <string name="txt_appartment_name">Apartment Name</string>
+    <!-- <string name="txt_street">Street</string>-->
+    <string name="txt_streets">Street</string>
+    <string name="txt_street">Address1</string>
+    <string name="txt_postal_code">Postal Code</string>
+    <string name="txt_show_cart">Show Cart</string>
+    <string name="txt_restaurant_name">Restaurant Name</string>
+    <string name="txt_address_book">Address book</string>
+    <string name="txt_add_new">Add New</string>
+    <string name="txt_contact_address">Contact Address</string>
+    <string name="txt_contact_no">Contact No</string>
+    <string name="txt_pls_signin">Please signin / signup to continue</string>
+    <string name="txt_charges">This restaurant charges</string>
+    <string name="txt_empty">Empty</string>
+    <string name="txt_lets_pay">Proceed</string>
+    <string name="txt_collect">Collect</string>
+    <string name="txt_deliver">Deliver</string>
+    <string name="txt_dinein">Self Pickup</string>
+    <string name="txt_date">12/31/2015 – 03:30</string>
+    <string name="txt_deliver_to_my_table">Deliver to my table</string>
+    <string name="txt_tab_text">TAB 006</string>
+    <string name="txt_item_total">Item Total</string>
+    <string name="txt_bill_total">Bill Total</string>
+    <string name="txt_apply_coupon">+ Apply Coupon</string>
+    <string name="txt_coupon_value">Coupon Value</string>
+    <string name="txt_package_charges">Package Charges</string>
+    <string name="txt_delivery_charges">Delivery Fee</string>
+    <string name="txt_extra_delivery_charges">Delivery Charges - Extra -</string>
+    <string name="txt_service_tax">Service Tax</string>
+    <string name="txt_vat">GST</string>
+    <string name="txt_grand_total">Grand Total</string>
+    <string name="txt_want_sugar">Want a little sugar?</string>
+    <string name="txt_delivery_method">Select Delivery Method</string>
+    <string name="txt_modes_of_payment">Modes of payment</string>
+    <string name="txt_pay_online">Online Payment(Credit Card / Online Banking)</string>
+    <string name="txt_cod">Cash on Delivery (COD)</string>
+    <string name="txt_wallet">Foodpurby Wallet</string>
+    <string name="txt_go">Go…</string>
+    <string name="txt_payment_method">Payment Method</string>
+    <string name="txt_send_otp_to">We\'ve sent a verification code to</string>
+    <string name="txt_number">+91–9003960003</string>
+    <string name="txt_verify">Verify</string>
+    <string name="txt_resend_otp_text">In case you do not receive an SMS in 30 seconds click resend to get another code</string>
+    <string name="txt_resend">Resend</string>
+    <string name="txt_order_placed">Order is successfully placed. Thanks!.</string>
+    <string name="txt_find_order_details">Please find your order details</string>
+    <string name="txt_order_id">Order Id:</string>
+    <string name="txt_total">Total:</string>
+    <string name="txt_thanks">Thanks</string>
+    <string name="txt_uh_oh">Uh - Oh!</string>
+    <string name="txt_retry">Retry</string>
+    <string name="txt_or">OR</string>
+    <string name="txt_type_your_location">Type your location</string>
+    <string name="txt_profile_information">Profile Information</string>
+    <string name="txt_change_password">Change Password</string>
+    <string name="txt_first_name">First Name</string>
+    <string name="txt_last_name">Last Name</string>
+    <string name="txt_email_address">Email Address</string>
+    <string name="txt_registered_mobile_number">Registered Mobile Number</string>
+    <string name="txt_edit_profile">Edit Profile</string>
+    <string name="txt_signout">SignOut</string>
+    <string name="txt_registered_email_id">Registered Email Id</string>
+    <string name="txt_update_profile_details">Update profile details</string>
+    <string name="title_sort_by">Sort By</string>
+    <string name="txt_popularity">Popularity</string>
+    <string name="txt_rating">Rating</string>
+    <string name="txt_minimum_order">Min. Order</string>
+    <string name="txt_close">Close</string>
+
+
+    <string name="txt_favourite_restaurants">Favourite Restaurants</string>
+    <string name="txt_pure_vegeterian">Pure Vegetarian</string>
+    <string name="txt_cusines">Cuisines</string>
+    <string name="txt_apply_filters">Apply Filters</string>
+    <string name="txt_min">min</string>
+    <string name="txt_restaurant_open_later">Restaurant open later</string>
+    <string name="txt_opening_hours">Opening days</string>
+    <string name="txt_open">Opening hours</string>
+    <string name="txt_payment_methods">Payment Methods</string>
+    <string name="txt_cusine">Cuisine</string>
+    <string name="txt_addresses">Address</string>
+    <string name="txt_add_your_rating">Add your rating</string>
+    <string name="txt_no_reviews_found">No reviews found.</string>
+    <string name="txt_more_reviews">More reviews…</string>
+    <string name="txt_vibration">Vibrate while adding to cart</string>
+    <string name="txt_items">Items</string>
+    <string name="txt_delivery_charges_extra">Delivery Charges - Extra -</string>
+    <string name="txt_order_total">Order Total</string>
+    <string name="text_date">Date</string>
+    <string name="txt_status">Status</string>
+    <string name="txt_payment_status">Payment Status</string>
+    <string name="txt_update_password">Update Password</string>
+    <string name="hint_current_password">Current Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="txt_login_your_account">Login your account</string>
+    <string name="hint_email_id">Email Id</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_create_new_account">Create new Account</string>
+    <string name="txt_sign_up">Signup</string>
+    <string name="text_forgot_password">Forgot password?</string>
+    <string name="txt_pls_wait">Please wait…</string>
+    <string name="hint_search">Search…</string>
+    <string name="txt_enter_coupon_code">Enter Coupon Code</string>
+    <string name="hint_coupon_code">Coupon Code</string>
+    <string name="txt_no_coupon_code">No Coupon Code</string>
+    <string name="txt_list_by_favourite">List by Favourite</string>
+    <string name="txt_list_by_frequent_visit">List by Frequent Visit</string>
+    <string name="txt_want_to_clear_cart">Do you really want to clear your cart?</string>
+    <string name="txt_want_to_clear_item">Do you really want to clear this item?</string>
+    <string name="txt_dismiss">Dismiss</string>
+    <string name="txt_clear_order">Clear Order</string>
+    <string name="txt_got_99_products">Got 99 Products</string>
+    <string name="txt_not_more_99_items">You can\'t add more than 99 items.</string>
+    <string name="txt_schedule_a_time">OK, let\'s schedule a time.</string>
+    <string name="txt_membercount">OK, let\'s select member count.</string>
+    <string name="txt_when_want_to_pick">When do you want to pick it up?</string>
+    <string name="txt_asap">ASAP</string>
+    <string name="txt_or_later_at">or pre-order</string>
+    <string name="txt_back">Back</string>
+    <string name="txt_confirm">Confirm</string>
+    <string name="txt_deliver_to_table">Deliver to table</string>
+    <string name="txt_table_number">Table number</string>
+    <string name="txt_review_title">Review Title</string>
+    <string name="txt_review_description">Review Description</string>
+    <string name="txt_submit_rating">Submit rating</string>
+    <string name="txt_shop_closed">Currently shop is closed!</string>
+    <string name="txt_mobile_number">Mobile Number</string>
+    <string name="txt_invite_and_earn">Invite and earn</string>
+    <string name="txt_invite">Invite</string>
+    <string name="txt_banglore">Bangalore</string>
+    <string name="txt_edit">Edit</string>
+    <string name="prefix_rs">Rs:</string>
+    <string name="Rs">\u20B9</string>
+    <string name="txt_checkout">Checkout</string>
+    <string name="txt_offers">Offers</string>
+    <string name="txt_contact">Contact Us</string>
+    <string name="txt_could_not_find_restaurants">We couldn\'t find any restaurants</string>
+    <string name="txt_try_changing_filters">Try changing filters</string>
+    <string name="txt_change_filters">Change Location</string>
+    <string name="txt_find_nearby">Find nearby</string>
+    <string name="txt_signup_using_email">Signup using email</string>
+    <string name="txt_item_name">Item Name</string>
+    <string name="txt_usd">USD 000</string>
+    <string name="txt_item_desc">Item Desc</string>
+    <string name="txt_office">Office</string>
+    <string name="cont_address">45, </string>
+    <string name="txt_product">Product</string>
+    <string name="title_ingridents">Ingredients:</string>
+    <string name="txt_clear">Clear</string>
+    <string name="txt_total_price">Total Price</string>
+    <string name="txt_km">KM</string>
+    <string name="txt_min_with_colun">Min :</string>
+    <string name="txt_delivery_fee">Delivery Fee</string>
+    <string name="txt_5_min"> ₹ 5 min</string>
+    <string name="txt_delivers_in">Delivery Time</string>
+    <string name="txt_open_later">Restaurant open later</string>
+    <string name="txt_distance">Distance</string>
+    <string name="txt_menu">Menu</string>
+    <string name="txt_order_number">Order No :</string>
+    <string name="txt_restaurant_name_with_colun">Restaurant Name:</string>
+    <string name="txt_date_with_coloun">Date:</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_add_address">Add Address</string>
+    <string name="txt_select_address">Select Address</string>
+    <string name="txt_ingridents_with_coloun">Ingredients:</string>
+    <string name="txt_total_quantity">Total Quantity</string>
+    <string name="txt_title">Title</string>
+    <string name="txt_2_min">2 min</string>
+    <string name="txt_2_max">2 max</string>
+    <string name="txt_item_names">Item Names</string>
+    <string name="txt_category_names">Category Names</string>
+    <string name="txt_select_city_and_area">Please select city and area to continue</string>
+    <string name="toast_select_area">Please select area to continue</string>
+    <string name="toast_signup_success">Signup success</string>
+    <string name="toast_login_success">Login success</string>
+    <string name="toast_item_clicked_on">"Item clicked on: "</string>
+    <string name="txt_delivery_address">"Delivery Address "</string>
+    <string name="txt_billing_address">"Billing Address "</string>
+    <string name="txt_billing_and_delivery_address"><![CDATA["Billing & Delivery Address "]]></string>
+    <string name="toast_minimum_cart_order_value">"Minimum cart order value should be "</string>
+    <string name="txt_on_orders_above">" on orders above "</string>
+    <string name="txt_select_delivery_method">Select Delivery Method</string>
+    <string name="txt_select_outlet">Choose Outlet</string>
+    <string name="txt_pls_login_to_apply_coupon">Please login to apply coupon.</string>
+    <string name="toast_pls_select_delivery_time">Please select the deliver time.</string>
+    <string name="toast_to_my_table">To my table</string>
+    <string name="txt_pls_select_delivery_method">Please select the delivery method.</string>
+    <string name="toast_error_while_calculating_cart">Error while calculating cart. Please try again later.</string>
+    <string name="txt_select_billing_address">Select Billing Address</string>
+    <string name="txt_select_delivery_address">Select Delivery Address</string>
+    <string name="txt_select_dinein_address">Select Dinein Address</string>
+    <string name="txt_table">"Table "</string>
+    <string name="prefix_service_tax">Service Tax (</string>
+    <string name="prefix_vat">GST (</string>
+    <string name="prefix_apply">"Apply "</string>
+    <string name="prefix_no_coupon_code">No Coupon Code</string>
+    <string name="txt_when_want_to_deliver">When do you want to deliver it?</string>
+    <string name="prefix_collect">"Collect - "</string>
+    <string name="txt_verify_your_number">Verify your number</string>
+    <string name="toast_enter_verification_code">Please enter the verification code.</string>
+    <string name="prefix_payment_online">Pay online (</string>
+    <string name="toast_select_payment_method">Please select a payment method.</string>
+    <string name="txt_warning">Warning!</string>
+    <string name="txt_sorry_voucher">Sorry, Voucher</string>
+    <string name="txt_sufix_voucher">is not applicable to COD method, please select an online payment method to redeem it.</string>
+    <string name="txt_online_payment_payumoney">Online Payment - PayUMoney</string>
+    <string name="txt_online_payment">Online Payment</string>
+    <string name="txt_open_reataurant">Open Restaurant</string>
+    <string name="txt_new_reataurant">New Restaurant</string>
+    <string name="txt_voucher_accept">Voucher Accept</string>
+    <string name="txt_preorder">Pre order</string>
+    <string name="toast_transaction_failed">Transaction failed</string>
+    <string name="toast_payment_successful">Payment successful.</string>
+    <string name="txt_success">Success</string>
+    <string name="txt_invoice_num">"Invoice Number: "</string>
+    <string name="txt_totals">"Total: "</string>
+    <string name="txt_filters">Filters</string>
+    <string name="txt_getting_details">Getting Details...</string>
+    <string name="txt_hated_it">Hated it</string>
+    <string name="txt_disliked_it">Disliked it</string>
+    <string name="txt_its_ok">It\'s OK</string>
+    <string name="txt_liked_it">Liked it</string>
+    <string name="txt_loved_it">Loved it</string>
+    <string name="toast_please_give_rating">Please give rating.</string>
+    <string name="dialog_please_wait">Please wait...</string>
+    <string name="txt_ratings">Ratings</string>
+    <string name="toast_no_item_to_show">No items to show</string>
+    <string name="toast_this_device_not_supported">This device is not supported for required google play services</string>
+    <string name="title_enable_location">Enable Location</string>
+    <string name="msg_gps_not_enable">GPS is not enabled.Kindly Do you want to go to settings menu?</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="txt_setting">Settings</string>
+    <string name="txt_update_address">Update address</string>
+    <string name="toast_functionality_is_not_yet_completed">Functionality is not yet completed</string>
+    <string name="toast_please_enter_the_location">Please enter the location name.</string>
+    <string name="toast_please_enter_the_street">Please enter the street name.</string>
+    <string name="toast_please_enter_the_postal_code">Please enter the postal code.</string>
+    <string name="toast_please_enter_the_landmark">Please enter the landmark.</string>
+    <string name="toast_please_select_city">Please select city and area to continue.</string>
+    <string name="txt_my_orders">My Orders</string>
+    <string name="txt_order_details">Order Details</string>
+    <string name="toast_new_password_Confirm_password"><![CDATA[New password & confirm password is not match, please try again]]></string>
+    <string name="toast_please_signin">Please signin</string>
+    <string name="txt_login_success">Login success</string>
+    <string name="txt_signin">Signin</string>
+    <string name="txt_forgotten_password">Forgotten your password?</string>
+    <string name="txt_singnup_sucess">Signup success</string>
+    <string name="toast_sucess">Success</string>
+    <string name="toast_user_cancel">User cancel</string>
+    <string name="toast_error">Error</string>
+    <string name="toast_please_select_your_city">Please select your city and area.</string>
+    <string name="toast_select_category">Please select Category to continue</string>
+    <string name="txt_addcomments">Add Comments</string>
+    <string name="title_activity_get_start">GetStartActivity</string>
+    <string name="txt_getstart">Get Started</string>
+    <string name="txt_allshops">Food &amp; Groceries</string>
+    <string name="txt_allshops_search">Restaurants &amp; Supermarkets</string>
+    <string name="txt_delivery_in">Delivery in</string>
+    <string name="txt_more">More</string>
+    <string name="txt_myprofile">My Profile</string>
+    <string name="txt_tabaoco">Foodpurby</string>
+    <string name="txt_tabao">Foodpurby</string>
+    <string name="txt_tabao_credit">Foodpurby Credit</string>
+    <string name="txt_fastest_delivery">Fastest Delivery</string>
+    <string name="txt_groceries">Groceries</string>
+    <string name="txt_food">Food</string>
+    <string name="txt_subscribe">Subscribe now</string>
+    <string name="txt_sub_total">Sub total</string>
+    <string name="txt_comments">Comments</string>
+    <string name="txt_subscribe_title">Subscribe to our newsletter</string>
+    <string name="txt_subscribe_subtitle">Dont\'t miss out on our great offers</string>
+    <string name="txt_restaurants">Restaurants</string>
+    <string name="txt_supermarket">Supermarket</string>
+    <string name="title_activity_restaurat">RestauratActivity</string>
+    <string name="title_activity_outlet">OutletActivity</string>
+    <string name="submit">Submit</string>
+    <string name="tabaoco_credit">Foodpurby Credit</string>
+    <string name="textd">Reload the credit to enjoy more offer now!</string>
+    <string name="tabaoco_credit_details">For more information about Foodpurby Credit plesase visit below link</string>
+    <string name="points">Your Current Wallet Points:</string>
+    <string name="wallet_history">Wallet Reload History</string>
+    <string name="credit_points">Please Enter Credit Points</string>
+    <string name="pure_vegetarian">Pure vegetarian</string>
+    <string name="non_vegetarian">Non vegetarian</string>
+    <string name="halal">Halal</string>
+    <string name="non_halal">Non halal</string>
+    <string name="park_free">Pork free</string>
+    <string name="restaurent_filter">Filter Restaurant</string>
+    <string name="address_type">Address Type</string>
+    <string name="go_restaurant">Go to Restaurant</string>
+    <string name="delete_address">Are you want to delete address</string>
+    <string name="html">tabaogo.com/tabao-credit.html</string>
+
+
+    <string-array name="country_code">
+        <item>af,93,Afghanistan</item>
+        <item>al,355,Albania</item>
+        <item>dz,213,Algeria</item>
+        <item>ad,376,Andorra</item>
+        <item>ao,244,Angola</item>
+        <item>aq,672,Antarctica</item>
+        <item>ar,54,Argentina</item>
+        <item>am,374,Armenia</item>
+        <item>aw,297,Aruba</item>
+        <item>au,61,Australia</item>
+        <item>at,43,Austria</item>
+        <item>az,994,Azerbaijan</item>
+        <item>bh,973,Bahrain</item>
+        <item>bd,880,Bangladesh</item>
+        <item>by,375,Belarus</item>
+        <item>be,32,Belgium</item>
+        <item>bz,501,Belize</item>
+        <item>bj,229,Benin</item>
+        <item>bt,975,Bhutan</item>
+        <item>bo,591,Bolivia</item>
+        <item>ba,387,Bosnia And Herzegovina</item>
+        <item>bw,267,Botswana</item>
+        <item>br,55,Brazil</item>
+        <item>bn,673,Brunei Darussalam</item>
+        <item>bg,359,Bulgaria</item>
+        <item>bf,226,Burkina Faso</item>
+        <item>mm,95,Myanmar</item>
+        <item>bi,257,Burundi</item>
+        <item>kh,855,Cambodia</item>
+        <item>cm,237,Cameroon</item>
+        <item>ca,1,Canada</item>
+        <item>cv,238,Cape Verde</item>
+        <item>cf,236,Central African Republic</item>
+        <item>td,235,Chad</item>
+        <item>cl,56,Chile</item>
+        <item>cn,86,China</item>
+        <item>cx,61,Christmas Island</item>
+        <item>cc,61,Cocos (keeling) Islands</item>
+        <item>co,57,Colombia</item>
+        <item>km,269,Comoros</item>
+        <item>cg,242,Congo</item>
+        <item>cd,243,Congo</item>
+        <item>ck,682,Cook Islands</item>
+        <item>cr,506,Costa Rica</item>
+        <item>hr,385,Croatia</item>
+        <item>cu,53,Cuba</item>
+        <item>cy,357,Cyprus</item>
+        <item>cz,420,Czech Republic</item>
+        <item>dk,45,Denmark</item>
+        <item>dj,253,Djibouti</item>
+        <item>tl,670,Timor-leste</item>
+        <item>ec,593,Ecuador</item>
+        <item>eg,20,Egypt</item>
+        <item>sv,503,El Salvador</item>
+        <item>gq,240,Equatorial Guinea</item>
+        <item>er,291,Eritrea</item>
+        <item>ee,372,Estonia</item>
+        <item>et,251,Ethiopia</item>
+        <item>fk,500,Falkland Islands (malvinas)</item>
+        <item>fo,298,Faroe Islands</item>
+        <item>fj,679,Fiji</item>
+        <item>fi,358,Finland</item>
+        <item>fr,33,France</item>
+        <item>pf,689,French Polynesia</item>
+        <item>ga,241,Gabon</item>
+        <item>gm,220,Gambia</item>
+        <item>ge,995,Georgia</item>
+        <item>de,49,Germany</item>
+        <item>gh,233,Ghana</item>
+        <item>gi,350,Gibraltar</item>
+        <item>gr,30,Greece</item>
+        <item>gl,299,Greenland</item>
+        <item>gt,502,Guatemala</item>
+        <item>gn,224,Guinea</item>
+        <item>gw,245,Guinea-bissau</item>
+        <item>gy,592,Guyana</item>
+        <item>ht,509,Haiti</item>
+        <item>hn,504,Honduras</item>
+        <item>hk,852,Hong Kong</item>
+        <item>hu,36,Hungary</item>
+        <item>in,91,India</item>
+        <item>id,62,Indonesia</item>
+        <item>ir,98,Iran, Islamic Republic Of</item>
+        <item>iq,964,Iraq</item>
+        <item>ie,353,Ireland</item>
+        <item>im,44,Isle Of Man</item>
+        <item>il,972,Israel</item>
+        <item>it,39,Italy</item>
+        <item>ci,225,Côte</item>
+        <item>jp,81,Japan</item>
+        <item>jo,962,Jordan</item>
+        <item>kz,7,Kazakhstan</item>
+        <item>ke,254,Kenya</item>
+        <item>ki,686,Kiribati</item>
+        <item>kw,965,Kuwait</item>
+        <item>kg,996,Kyrgyzstan</item>
+        <item>la,856,Lao</item>
+        <item>lv,371,Latvia</item>
+        <item>lb,961,Lebanon</item>
+        <item>ls,266,Lesotho</item>
+        <item>lr,231,Liberia</item>
+        <item>ly,218,Libya</item>
+        <item>li,423,Liechtenstein</item>
+        <item>lt,370,Lithuania</item>
+        <item>lu,352,Luxembourg</item>
+        <item>mo,853,Macao</item>
+        <item>mk,389,Macedonia, The Former Yugoslav Republic Of</item>
+        <item>mg,261,Madagascar</item>
+        <item>mw,265,Malawi</item>
+        <item>my,60,Malaysia</item>
+        <item>mv,960,Maldives</item>
+        <item>ml,223,Mali</item>
+        <item>mt,356,Malta</item>
+        <item>mh,692,Marshall Islands</item>
+        <item>mr,222,Mauritania</item>
+        <item>mu,230,Mauritius</item>
+        <item>yt,262,Mayotte</item>
+        <item>mx,52,Mexico</item>
+        <item>fm,691,Micronesia, Federated States Of</item>
+        <item>md,373,Moldova, Republic Of</item>
+        <item>mc,377,Monaco</item>
+        <item>mn,976,Mongolia</item>
+        <item>me,382,Montenegro</item>
+        <item>ma,212,Morocco</item>
+        <item>mz,258,Mozambique</item>
+        <item>na,264,Namibia</item>
+        <item>nr,674,Nauru</item>
+        <item>np,977,Nepal</item>
+        <item>nl,31,Netherlands</item>
+        <item>nc,687,New Caledonia</item>
+        <item>nz,64,New Zealand</item>
+        <item>ni,505,Nicaragua</item>
+        <item>ne,227,Niger</item>
+        <item>ng,234,Nigeria</item>
+        <item>nu,683,Niue</item>
+        <item>kp,850,Korea</item>
+        <item>no,47,Norway</item>
+        <item>om,968,Oman</item>
+        <item>pk,92,Pakistan</item>
+        <item>pw,680,Palau</item>
+        <item>pa,507,Panama</item>
+        <item>pg,675,Papua New Guinea</item>
+        <item>py,595,Paraguay</item>
+        <item>pe,51,Peru</item>
+        <item>ph,63,Philippines</item>
+        <item>pn,870,Pitcairn</item>
+        <item>pl,48,Poland</item>
+        <item>pt,351,Portugal</item>
+        <item>pr,1,Puerto Rico</item>
+        <item>qa,974,Qatar</item>
+        <item>ro,40,Romania</item>
+        <item>ru,7,Russian Federation</item>
+        <item>rw,250,Rwanda</item>
+        <item>bl,590,Saint Barthélemy</item>
+        <item>ws,685,Samoa</item>
+        <item>sm,378,San Marino</item>
+        <item>st,239,Sao Tome And Principe</item>
+        <item>sa,966,Saudi Arabia</item>
+        <item>sn,221,Senegal</item>
+        <item>rs,381,Serbia</item>
+        <item>sc,248,Seychelles</item>
+        <item>sl,232,Sierra Leone</item>
+        <item>sg,65,Singapore</item>
+        <item>sk,421,Slovakia</item>
+        <item>si,386,Slovenia</item>
+        <item>sb,677,Solomon Islands</item>
+        <item>so,252,Somalia</item>
+        <item>za,27,South Africa</item>
+        <item>kr,82,Korea, Republic Of</item>
+        <item>es,34,Spain</item>
+        <item>lk,94,Sri Lanka</item>
+        <item>sh,290,Saint Helena, Ascension And Tristan Da Cunha</item>
+        <item>pm,508,Saint Pierre And Miquelon</item>
+        <item>sd,249,Sudan</item>
+        <item>sr,597,Suriname</item>
+        <item>sz,268,Swaziland</item>
+        <item>se,46,Sweden</item>
+        <item>ch,41,Switzerland</item>
+        <item>sy,963,Syrian Arab Republic</item>
+        <item>tw,886,Taiwan, Province Of China</item>
+        <item>tj,992,Tajikistan</item>
+        <item>tz,255,Tanzania, United Republic Of</item>
+        <item>th,66,Thailand</item>
+        <item>tg,228,Togo</item>
+        <item>tk,690,Tokelau</item>
+        <item>to,676,Tonga</item>
+        <item>tn,216,Tunisia</item>
+        <item>tr,90,Turkey</item>
+        <item>tm,993,Turkmenistan</item>
+        <item>tv,688,Tuvalu</item>
+        <item>ae,971,United Arab Emirates</item>
+        <item>ug,256,Uganda</item>
+        <item>gb,44,United Kingdom</item>
+        <item>ua,380,Ukraine</item>
+        <item>uy,598,Uruguay</item>
+        <item>us,1,United States</item>
+        <item>uz,998,Uzbekistan</item>
+        <item>vu,678,Vanuatu</item>
+        <item>va,39,Holy See (vatican City State)</item>
+        <item>ve,58,Venezuela, Bolivarian Republic Of</item>
+        <item>vn,84,Viet Nam</item>
+        <item>wf,681,Wallis And Futuna</item>
+        <item>ye,967,Yemen</item>
+        <item>zm,260,Zambia</item>
+        <item>zw,263,Zimbabwe</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="delete">Delete</string>
+
+
+</resources>

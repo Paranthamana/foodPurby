@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_shoppa_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tabaoco_toolbar"
+        layout="@layout/activity_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabaoco_toolbar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/tabaoco_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/tabaoco_credit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tabaoco_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabaoco_credit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/textd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tabaoco_creditdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabaoco_text"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/tabaoco_credit_details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+            android:id="@+id/htmllink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabaoco_creditdetails"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="@string/html"
+            android:textColor="@color/com_facebook_blue"
+            android:textColorLink="@color/toolbar_color"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tabaoco_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/htmllink"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="point"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tabaoco_point_values"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/tabaoco_points"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/bg_city"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <RadioGroup
+            android:id="@+id/rg_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabaoco_points"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/bg_city"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="30"
+                android:text="30" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="50"
+                android:text="50" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="100"
+                android:text="100" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tabaoco_submit"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabaoco_point_values"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_red_button"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/wallet_list"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabaoco_submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/rounded_red_button"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/wallet_history"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

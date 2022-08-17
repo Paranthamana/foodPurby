@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/dialog_bg"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_deliver_to_table"
+        android:textSize="@dimen/TextSize_13"/>
+
+    <EditText
+        android:id="@+id/etTableNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center"
+        android:hint="@string/txt_table_number"
+        android:maxLength="32"
+        android:singleLine="true"
+        android:textColor="@color/dark_green"
+        android:textSize="@dimen/TextSize_13"/>
+
+    <Button
+        android:id="@+id/btnAddTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/TextSize_13"
+        android:background="@drawable/rounded_red_button"
+        android:gravity="center"
+        android:text="@string/txt_cancel"
+        android:textAllCaps="false"/>
+</LinearLayout>

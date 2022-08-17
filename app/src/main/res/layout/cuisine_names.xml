@@ -1,0 +1,15 @@
+<com.foodpurby.customview.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/rowTextView"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/_8sdp"
+          android:text="android"
+          android:drawableRight="@drawable/ic_right_arrow"
+          android:drawableLeft="@drawable/ic_shop_menu_bullet"
+          android:drawablePadding="@dimen/_8sdp"
+          android:textStyle="bold"
+          android:layout_gravity="center"
+          android:gravity="left"
+          android:textSize="@dimen/TextSize_12" >
+
+</com.foodpurby.customview.CustomTextView>

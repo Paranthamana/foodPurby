@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.foodpurby.com.tabaogo.screens.MyCart">
+
+    <include layout="@layout/activity_toolbar" />
+
+    <WebView
+        android:id="@+id/wvHelp"
+        android:background="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </WebView>
+</LinearLayout>

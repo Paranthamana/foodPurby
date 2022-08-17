@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.foodpurby">
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.tabaogo.googlemapsv2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.tabaogo.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="com.foodpurby.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!--<uses-permission android:name="com.tabaogo.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />-->
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <!--<uses-library android:name="com.google.android.maps" />-->
+
+    <application
+        android:name="com.foodpurby.screens.MyApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:node="replace">
+
+        <!--
+            <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD7OFo1RwcW9w5RhNJ8RjpRJyNEUXKcoCw" />
+        -->
+
+
+        <!--
+        old google map key
+
+        AIzaSyCHI_ct93Nn_Je064EG8kSqB4YDn6_fsG4
+        -->
+
+
+        <!--
+         <meta-data
+         android:name="com.google.android.geo.API_KEY"
+         android:value="AIzaSyCqSZGVffldhQF8JrG-RZLJjlwSnGFR-tY" />
+        -->
+        <!--
+            <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAbvixVeIwSOPouTdfkWg1mjFjXgi0TVA0" />
+        -->
+        <!--debug map key-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBmd1Lufr3NZ7b67Nstvv3V3pi2bQfWzQo" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- for Gingerbread GSF backward compat -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.technoduce.nectarchatv2" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.foodpurby.notifications.MyBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.foodpurby.screens.RestaurantSplash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.foodpurby.screens.MenuCuisines"
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodpurby.screens.LiveOrderTracking"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.MenuProducts"
+            android:label="@string/title_activity_menu_products"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foodpurby.screens.UserOrder"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.OTPPAge"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.UserOrderDetails"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.foodpurby.screens.TabaocoCreditActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.foodpurby.screens.RestaurantFavList"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.foodpurby.screens.MyCart"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.MyCartCalculation"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.foodpurby.screens.MyAddress"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.MyPaymentMethod"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.MyPaymentCOD"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.RestaurantFilter"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.MyPaymentOnline_PayU"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.UserSigninAct"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.UserProfile"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.foodpurby.screens.UserPassword"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.map.MarkAddressActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.map.MarkAddressWithoutMapActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.foodpurby.HomeActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.RestaurantProfile"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.RestaurantProfileReview"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.UserAddressEditWithoutMap"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.UserSignUp"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.UserProfileEdit"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.CityArea"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.MyPaymentOrderConfirmed"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.OfflineDataSerivces"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.UserSigninForgotPassword"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.Settings"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.Help"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.HelpBrowser"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.demo.MainMap"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.FBSignUpAct"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.foodpurby.screens.GetStartActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.RestaurantMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.RestaurantItemActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.MoreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.RestaurantActivity"
+            android:label="@string/title_activity_restaurat"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ipay.IpayAcitivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ipay.IpayAcitivityR"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ff65b24c98988eec69c87fc0bfa70dbed9fc6c5a" />
+
+        <activity
+            android:name="com.foodpurby.screens.OutletActivity"
+            android:label="@string/title_activity_outlet"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name="com.foodpurby.screens.TransactionActivity"
+            android:label="@string/title_activity_outlet"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+    </application>
+
+</manifest>

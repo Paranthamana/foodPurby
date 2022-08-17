@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivRestaurantLogo"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvProductName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="@string/txt_product"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/tvClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/transparent"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/delete" />
+
+                    <TextView
+                        android:id="@+id/tvClear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="3"
+                        android:gravity="right|center"
+                        android:padding="5dp"
+                        android:text="@string/txt_clear"
+                        android:textColor="@color/toolbar_color"
+                        android:textSize="16dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvProductIngredientsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/title_ingridents" />
+
+                    <TextView
+                        android:id="@+id/tvProductIngredients"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Product" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/btnItemRemove"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/transparent"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/minus_button" />
+
+                            <TextView
+                                android:id="@+id/tvTotalQuantity"
+                                android:layout_width="34dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="00"
+                                android:textColor="@color/red"
+                                android:textSize="20dp" />
+
+                            <ImageButton
+                                android:id="@+id/btnItemAdd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/transparent"
+                                android:paddingBottom="5dp"
+                                android:paddingRight="20dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/add_button" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvTotalPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/txt_total_price"
+                                android:textColor="@color/price"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/btnUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_up_arrow" />
+
+            <ImageButton
+                android:id="@+id/btnDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_down_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

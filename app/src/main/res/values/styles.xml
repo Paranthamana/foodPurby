@@ -1,0 +1,121 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/toolbar_color</item>
+        <item name="colorPrimaryDark">@color/toolbar_search_color</item>
+        <!--<item name="android:navigationBarColor">@color/SystemColor</item>-->
+        <item name="android:textColorPrimary">@color/white</item>
+
+    </style>
+
+    <style name="CustomNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/toolbar_color</item>
+        <item name="colorPrimaryDark">@color/toolbar_search_color</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+
+    <style name="FacebookLoginButton">
+
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="DialogAnimation1">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="CustomTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/toolbar_color</item>
+        <item name="colorPrimaryDark">@color/toolbar_search_color</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/toolbar_color
+        </item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="Custom" parent="android:Theme.Holo.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Please wait....</item>
+        <item name="DialogSpotColor">#D34C1D</item>
+        <item name="DialogSpotCount">4</item>
+        <item name="android:backgroundDimEnabled">false</item>
+
+    </style>
+
+    <style name="MyTitleTextStyle">
+        <item name="android:textColor">#FFEB3B</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">#FFC107</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowTitleStyle">@style/MyTitleTextStyle</item>
+    </style>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/food_rating_bar_full</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">24dp</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="TextView.Large">
+        <item name="android:textSize">@dimen/TextSize_14</item>
+    </style>
+
+    <style name="TextView.Big">
+        <item name="android:textSize">@dimen/TextSize_13</item>
+    </style>
+
+    <style name="TextView.Normal">
+        <item name="android:textSize">@dimen/TextSize_12</item>
+    </style>
+
+    <style name="TextView.Small">
+        <item name="android:textSize">@dimen/TextSize_10</item>
+    </style>
+
+    <style name="TextView.Tiny">
+        <item name="android:textSize">@dimen/TextSize_9</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyThemeOverlay">
+        <item name="android:textColorPrimary" tools:targetApi="lollipop">@color/black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,373 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.foodpurby.screens.MyCart">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/title_sort_by"
+                        android:textSize="@dimen/TextSize_13" />
+
+                    <TextView
+                        android:id="@+id/ARF_reset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reset"
+                        android:textSize="@dimen/TextSize_13" />
+                </LinearLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tvPopularity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:text="@string/txt_popularity" />
+
+                        <TextView
+                            android:id="@+id/tvRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:text="@string/txt_rating" />
+
+                        <TextView
+                            android:id="@+id/tvMinOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:text="@string/txt_minimum_order" />
+
+                        <TextView
+                            android:id="@+id/tvDeliveryFee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:visibility="gone"
+                            android:text="@string/txt_delivery_fee" />
+
+                        <TextView
+                            android:id="@+id/tvFastestDelivery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:visibility="gone"
+                            android:text="@string/txt_fastest_delivery" />
+
+
+                        <TextView
+                            android:id="@+id/tvOpen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:text="@string/txt_open"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvClose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:text="@string/txt_close"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#d4d4d4" />
+
+            <LinearLayout
+                android:id="@+id/llFavourite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvFavourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/ic_list_fav_normal"
+                    android:padding="10dp"
+                    android:text="@string/txt_favourite_restaurants" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#d4d4d4" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_filters"
+                    android:textSize="@dimen/TextSize_13" />
+
+                <HorizontalScrollView
+                    android:id="@+id/hsv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvVegetarian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:text="@string/txt_preorder"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvPreorder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:text="@string/txt_preorder" />
+
+                        <TextView
+                            android:id="@+id/tvOnlinePayment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:text="@string/txt_online_payment" />
+
+                        <TextView
+                            android:id="@+id/tvOpenRestaurant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:text="@string/txt_open_reataurant" />
+
+                        <TextView
+                            android:id="@+id/tvVoucharAccept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+                            android:text="@string/txt_voucher_accept" />
+
+                        <TextView
+                            android:id="@+id/tvNewRestaurant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableTop="@drawable/sort_by_off"
+                            android:padding="10dp"
+
+                            android:text="@string/txt_new_reataurant" />
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginBottom="10dp"
+                android:background="#d4d4d4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/txt_cusines" />
+
+                    <TextView
+                        android:id="@+id/tv_select_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/txt_select_all" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvCuisines"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:scrollbars="none" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/restaurent_filter"
+                    android:textSize="@dimen/TextSize_13" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:scrollbars="none">
+
+                    <RadioGroup
+                        android:id="@+id/tv_radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/tv_purevegetarian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pure_vegetarian" />
+
+                        <RadioButton
+                            android:id="@+id/tv_nonvegetarian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/non_vegetarian" />
+
+                        <RadioButton
+                            android:id="@+id/tv_halal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/halal" />
+
+                        <RadioButton
+                            android:id="@+id/tv_nonhalal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/non_halal" />
+
+                        <RadioButton
+                            android:id="@+id/tv_parkfree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/park_free" />
+
+
+                    </RadioGroup>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnApplyFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_red_button"
+            android:text="@string/txt_apply_filters"
+            android:textAllCaps="false" />
+
+    </FrameLayout>
+
+    <include layout="@layout/activity_toolbar" />
+
+</LinearLayout>

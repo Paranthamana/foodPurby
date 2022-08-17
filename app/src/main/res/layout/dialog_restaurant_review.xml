@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/dialog_bg"
+              android:orientation="vertical"
+              android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/txt_add_your_rating"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginBottom="10dp"
+            android:background="#d4d4d4"/>
+
+        <RatingBar
+            android:id="@+id/rbRating"
+            style="@style/foodRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:rating="0.0"
+            android:stepSize="1.0"/>
+
+        <TextView
+            android:id="@+id/tvCustomMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:hint=" "
+            android:padding="10dp"
+            android:textColor="@color/toolbar_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="@string/txt_review_title"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/tvReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_addcomments"
+            android:inputType="textMultiLine"
+            android:maxLength="512"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="@string/txt_review_description"
+            android:paddingTop="20dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/tvReviewDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comment"
+            android:gravity="top"
+            android:lines="5"
+            android:background="@drawable/card_view"
+            android:maxLength="4096"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btnSubmitReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_red_button"
+            android:text="@string/txt_submit_rating"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:textSize="16sp"
+            android:text="@string/txt_cancel"/>
+
+    </LinearLayout>
+</LinearLayout>

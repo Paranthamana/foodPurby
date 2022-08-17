@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="com.foodpurby.com.tabaogo.demo.MainMap">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="68dp"
+        sothree:umanoParallaxOffset="100dp"
+        sothree:umanoDragView="@+id/dragView"
+        sothree:umanoShadowHeight="0dp"
+        sothree:umanoOverlay="false"
+        sothree:umanoClipPanel="true"
+        sothree:umanoFadeColor="@android:color/transparent"
+        sothree:umanoScrollableView="@+id/list">
+
+        <!-- MAIN CONTENT -->
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+                <fragment
+                    android:id="@+id/map_fragment"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    map:mapType="normal"
+                    map:uiCompass="false"
+                    map:uiRotateGestures="false"
+                    map:uiScrollGestures="true"
+                    map:uiTiltGestures="false"
+                    map:uiZoomControls="false"
+                    map:uiZoomGestures="true"
+                    tools:ignore="MissingPrefix" />
+
+            <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/radio_group_list_selector"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:background="#80000000"
+                android:padding="4dp" >
+
+                <RadioButton
+                    android:id="@+id/radioPopular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_popular"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#aaa" />
+
+                <RadioButton
+                    android:id="@+id/radioAZ"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="AZ"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#aaa" />
+
+                <RadioButton
+                    android:id="@+id/radioCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/txt_category"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+                <View
+                    android:id="@+id/VerticalLine"
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#aaa" />
+
+                <RadioButton
+                    android:id="@+id/radioNearBy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/txt_nearby"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+        </FrameLayout>
+
+        <!-- SLIDING LAYOUT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:clickable="false"
+            android:focusable="false"
+            sothree:umanoOverlay="false"
+            sothree:umanoClipPanel="true"
+            sothree:umanoFadeColor="@android:color/transparent"
+            android:id="@+id/dragView">
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/arrow_up"
+                    android:id="@+id/btnShowHide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:text="@string/txt_sort_by"
+                    android:id="@+id/tvSortBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:drawableTop="@drawable/ic_list_fav_normal"
+                    android:text=""
+                    android:id="@+id/tvFavourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:drawableTop="@drawable/ic_red"
+                    android:text=""
+                    android:id="@+id/tvFrequent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="#d4d4d4" />
+
+            <ListView
+                android:background="@color/white"
+                android:id="@+id/mRestaurantNameLists"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </ListView>
+        </LinearLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+</RelativeLayout>

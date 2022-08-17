@@ -1,0 +1,543 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.foodpurby.com.tabaogo.screens.MyCart">
+
+    <include layout="@layout/activity_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/order_top_background"
+        android:orientation="horizontal"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:id="@+id/ivRestaurantLogo"
+                            android:layout_width="@dimen/_63sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:adjustViewBounds="true"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:scaleType="fitXY"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_8sdp">
+
+                            <TextView
+                                android:id="@+id/tvRestaurantName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/TextSize_14"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:textSize="@dimen/TextSize_12"/>
+
+                            <TextView
+                                android:id="@+id/tvRestaurantCuisines"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:textSize="@dimen/TextSize_12"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:text=""
+                                    android:textSize="@dimen/TextSize_13"/>
+
+                                <View
+                                    android:layout_width="@dimen/_27sdp"
+                                    android:layout_height="1px"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_4sdp"
+                                    android:layout_marginRight="@dimen/_4sdp"
+                                    android:background="#ccc"
+                                    android:visibility="gone"/>
+
+                                <TextView
+                                    android:id="@+id/RVRNL_TV_restaurant_order_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text=""
+                                    android:textSize="@dimen/TextSize_13"
+                                    android:visibility="gone"/>
+
+                                <View
+                                    android:layout_width="@dimen/_27sdp"
+                                    android:layout_height="1px"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/_4sdp"
+                                    android:layout_marginRight="@dimen/_4sdp"
+                                    android:background="#ccc"
+                                    android:visibility="gone"/>
+
+                                <TextView
+                                    android:id="@+id/RVRNL_TV_restaurant_order_delivery_on_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text=""
+                                    android:textSize="@dimen/TextSize_13"
+                                    android:visibility="gone"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:background="#ccc"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="3"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/txt_items"
+                android:textColor="@color/black"
+                android:textSize="@dimen/TextSize_13"
+                android:typeface="sans"/>
+
+            <ListView
+                android:id="@+id/lvDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_view"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tvBilltotalText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/txt_bill_total"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvBilltotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:padding="@dimen/_8sdp"
+                                android:text=" "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:id="@+id/trCouponValue"
+                            android:visibility="gone"
+                            android:weightSum="4"
+                            >
+
+                            <TextView
+                                android:id="@+id/tvCouponValueText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/txt_coupon_value"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvCouponValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:padding="@dimen/_8sdp"
+                                android:text=""
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+                        <TableRow android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tvPackageChargesText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/txt_package_charges"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvPackageCharges"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:padding="@dimen/_8sdp"
+                                android:text=" "
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:id="@+id/trDeliveryCharges"
+                            android:visibility="visible"
+                            android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tvDeliveryChargesText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/txt_delivery_charges"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvDeliveryCharges"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:padding="@dimen/_8sdp"
+                                android:text=" "
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:visibility="gone"
+                            android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tvDeliveryChargesExtraText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/txt_delivery_charges_extra"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvDeliveryChargesExtra"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:padding="@dimen/_8sdp"
+                                android:text=" "
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+
+                        <TableRow android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tvServiceTaxText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/txt_service_tax"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvServiceTax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:padding="@dimen/_8sdp"
+                                android:text=" "
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+                        <TableRow android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tvVatText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/txt_vat"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvVat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:padding="@dimen/_8sdp"
+                                android:text=" "
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+                        <TableRow android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tvGrandTotalText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/txt_order_total"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvGrandTotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:padding="@dimen/_8sdp"
+                                android:text=" "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TableRow
+                            android:showDividers="beginning"
+                            android:weightSum="4"
+                            >
+
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_view"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TableRow android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tvDateText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/text_date"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_8sdp"
+                                android:text=" "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+                        <TableRow android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tvStatusText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/txt_status"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_8sdp"
+                                android:text=" "
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+                        <TableRow android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tvPaymentStatusText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_weight="3"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/txt_payment_status"
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+
+                            <TextView
+                                android:id="@+id/tvPaymentStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_8sdp"
+                                android:text=" "
+                                android:textSize="@dimen/TextSize_13"
+                                android:typeface="sans"/>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLiveTracking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rounded_red_button"
+                android:text="Live Tracking"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

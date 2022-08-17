@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.foodpurby.com.tabaogo.screens.MyCart">
+
+    <include layout="@layout/activity_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvRestaurantName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_restaurant_name"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_view"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_gravity="center"
+                            android:text="@string/txt_send_otp_to"
+                            android:textSize="14sp"
+                            android:layout_column="1"
+                            android:layout_weight="3"
+                            android:typeface="sans" />
+
+
+                        <TextView
+                            android:id="@+id/tvMobileNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_gravity="center"
+                            android:text="@string/txt_number"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_column="1"
+                            android:layout_weight="3"
+                            android:typeface="sans" />
+
+                        <EditText
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:layout_gravity="center"
+                            android:id="@+id/etOPTCode"
+                            android:hint=""
+                            android:inputType="number"
+                            android:layout_width="@dimen/_100sdp"
+                            android:textAlignment="center"
+                            android:textColor="@color/toolbar_color"
+                            android:gravity="center"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/btnOPTCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_verify"
+                            android:textAllCaps="false"
+                            android:background="@drawable/rounded_red_button"
+                            android:layout_marginTop="@dimen/_10sdp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_gravity="center"
+                            android:text="@string/txt_resend_otp_text"
+                            android:textSize="14sp"
+                            android:layout_column="1"
+                            android:layout_weight="3"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:id="@+id/tvResend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:text="@string/txt_resend"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/TextSize_13"
+                            android:layout_column="1"
+                            android:layout_weight="3"
+                            android:typeface="sans" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/latolight"
+                android:gravity="center|left"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/txt_rating"
+                android:textSize="@dimen/TextSize_14"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btnAddNewReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rounded_red_button"
+                android:fontFamily="@font/latolight"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/txt_add_your_rating"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/title"
+            android:background="#d4d4d4" />
+
+        <TextView
+            android:id="@+id/tvNoReviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/latolight"
+            android:padding="@dimen/_17sdp"
+            android:text="@string/txt_no_reviews_found"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/TextSize_14"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lvReviews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/v3"
+            android:layout_below="@+id/tvNoReviews" />
+
+        <View
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_above="@+id/tvMoreReviews"
+            android:background="#d4d4d4" />
+
+        <TextView
+            android:id="@+id/tvMoreReviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/latolight"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/txt_more_reviews"
+            android:textColor="@color/toolbar_color"
+            android:textSize="@dimen/TextSize_13" />
+
+    </RelativeLayout>
+
+</LinearLayout>

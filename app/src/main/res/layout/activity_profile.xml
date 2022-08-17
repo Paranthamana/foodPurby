@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.foodpurby.com.tabaogo.screens.MyCart">
+
+    <include layout="@layout/activity_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etDummy"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_view"
+                android:orientation="vertical"
+                android:padding="@dimen/_17sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/txt_profile_information"
+                        android:textSize="@dimen/TextSize_14"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/btnChangePassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/txt_change_password"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/TextSize_13"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_shop_menu_bullet"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:hint="@string/txt_first_name" />
+
+                <TextView
+                    android:id="@+id/tvFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:paddingLeft="@dimen/_37sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_shop_menu_bullet"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:hint="@string/txt_last_name" />
+
+                <TextView
+                    android:id="@+id/tvLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:paddingLeft="@dimen/_37sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_shop_menu_bullet"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:hint="@string/txt_email_address" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:paddingLeft="@dimen/_37sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_shop_menu_bullet"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:hint="@string/txt_registered_mobile_number" />
+
+                <TextView
+                    android:id="@+id/tvMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:paddingLeft="@dimen/_37sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="#d4d4d4" />
+                <TextView
+                    android:id="@+id/gender_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_shop_menu_bullet"
+                    android:drawablePadding="10dp"
+                    android:hint="Gender" />
+
+                <RadioGroup
+                    android:id="@+id/radioGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female" />
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginBottom="10dp"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:id="@+id/dob_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_shop_menu_bullet"
+                    android:drawablePadding="10dp"
+                    android:hint="Date of Birth" />
+
+                <TextView
+                    android:id="@+id/etDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" "
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_red_button"
+                    android:text="@string/txt_edit_profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="@dimen/_1sdp"
+                card_view:cardElevation="@dimen/_2sdp">
+
+                <ListView
+                    android:id="@+id/lvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_300sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:scrollbars="none" />
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/toolbar_color"
+                android:text="@string/txt_signout"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

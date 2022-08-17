@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              >
+
+    <include layout="@layout/activity_toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_4sdp">
+
+            <TextView
+                android:id="@+id/tvRestaurantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_restaurant_name"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_view"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="3"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/txt_modes_of_payment"
+                        android:textSize="@dimen/TextSize_12"
+                        android:textStyle="bold"
+                        android:typeface="sans"/>
+
+
+                    <RadioGroup
+                        android:id="@+id/rgOptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbOnline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/txt_pay_online"/>
+
+                        <RadioButton
+                            android:id="@+id/rbCOD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/txt_cod"/>
+                        <RadioButton
+                            android:id="@+id/rbWallet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/txt_wallet"/>
+
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/rounded_red_button"
+        android:text="@string/txt_go"
+        android:textAllCaps="false"/>
+</LinearLayout>

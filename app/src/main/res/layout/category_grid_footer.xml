@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="30dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnAllRestaurants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:background="@color/toolbar_color"
+            android:gravity="center"
+            android:text="@string/txt_allshops"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvCityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/city_area_et"
+                android:drawableLeft="@drawable/ic_city"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:text="@string/txt_city"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/tvAreaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/city_area_et"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:text="@string/txt_location"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/ACA_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/city_area_et"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:text="Category"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/tvMyLocation"
+                style="@style/TextView.Normal"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_current_location"
+                android:drawablePadding="10dp"
+                android:text="@string/current_loc"
+                android:textColor="@color/white"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btnShowRestaurants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/toolbar_color"
+                android:gravity="center"
+                android:text="@string/txt_show_restaurants"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="For testing purpose please use the below details\r\nCity: Bangalore\r\nArea: Marathahalli"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

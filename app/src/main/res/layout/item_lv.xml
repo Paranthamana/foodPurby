@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/card_view"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_7sdp">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgItemTypes"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:gravity="center"
+            android:visibility="visible"
+            fresco:placeholderImage="@drawable/type_veg"
+            fresco:placeholderImageScaleType="fitCenter"
+             />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/btnItemRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:src="@drawable/minus_button"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTotalQuantity"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_3sdp"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:text="00"
+                android:textColor="@color/red"
+                android:textSize="@dimen/TextSize_15"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/imgItemTypes"
+            android:layout_toRightOf="@+id/imgItemTypes"
+            android:singleLine="true"
+            android:text="item"
+            android:textColor="@color/item"
+            android:textSize="@dimen/TextSize_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvItemDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItem"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/imgItemTypes"
+            android:layout_toRightOf="@+id/imgItemTypes"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="Description"
+            android:textColor="@color/item"
+            android:textSize="@dimen/TextSize_11"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemDesc"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/imgItemTypes"
+            android:layout_toRightOf="@+id/imgItemTypes"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_8sdp"
+            android:singleLine="true"
+            android:text="Price"
+            android:textColor="@color/price"
+            android:textSize="@dimen/TextSize_12" />
+
+        <ImageButton
+            android:id="@+id/btnItemAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/transparent"
+            android:src="@drawable/add_button" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/RDMV_IV_menu_icons"
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/_3sdp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/RDMV_TV_menu_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_1sdp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:fontFamily="@font/latolight"
+        android:padding="10dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/TextSize_13" />
+
+</LinearLayout>

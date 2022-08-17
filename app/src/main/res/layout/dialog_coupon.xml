@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@null"
+        android:src="@drawable/ic_close" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_enter_coupon_code"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etCouponCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+        android:gravity="center"
+        android:hint="@string/hint_coupon_code"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColor="@color/dark_green"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnApplyCoupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_red_button"
+        android:text="@string/txt_no_coupon_code"
+        android:textAllCaps="false" />
+
+</LinearLayout>

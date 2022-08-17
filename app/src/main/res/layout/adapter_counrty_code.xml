@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/ACC_country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:textColor="@color/price"
+        android:textSize="@dimen/_12sdp"/>
+
+    <TextView
+        android:id="@+id/ACC_country_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_15sdp"
+        android:gravity="right"
+        android:textColor="@color/price"
+        android:textSize="@dimen/_12sdp"/>
+
+</LinearLayout>
